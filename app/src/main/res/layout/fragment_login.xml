@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    tools:context="ui.login.LoginFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/LogoText"
+            android:id="@+id/tvTextLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/llContainerWithLoginAndPassword"
+            android:text="@string/app_name"
+            android:textAllCaps="true"
+            android:fontFamily="@font/circe_extra_bold"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/llContainerWithLoginAndPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+            <TextView
+                style="@style/TextH1.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtLogin"/>
+
+            <TextView
+                style="@style/TextH5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/plsEnterLogin"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/gray"
+                />
+
+            <EditText
+                style="@style/TextH3"
+                android:id="@+id/etLogin"
+                android:autofillHints="username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintEnterLoginOrPhone"
+                android:layout_marginTop="10dp"
+                android:padding="12dp"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
+                android:background="@drawable/bg_login_edit_text"
+                android:textCursorDrawable="@drawable/edit_text_cursor"
+                tools:ignore="TextFields"
+                />
+
+            <EditText
+                style="@style/TextH3"
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintEnterPassword"
+                android:layout_marginTop="10dp"
+                android:padding="12dp"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
+                android:autofillHints="password"
+                android:background="@drawable/bg_login_edit_text"
+                android:textCursorDrawable="@drawable/edit_text_cursor"
+                />
+
+            <TextView
+                android:id="@+id/tvLoginWithoutAccount"
+                style="@style/TextH5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/loginWithoutAccount"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/gray"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llContainerWithButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            >
+
+            <TextView
+                style="@style/TextH5"
+                android:id="@+id/tvForgotPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/forgotPassword"
+                android:textColor="@color/gray"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/bg_button_login"
+                style="@style/TextH1"
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text="@string/buttonLogin"
+                android:layout_marginTop="12dp"
+                android:padding="12dp"
+                android:enabled="false"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

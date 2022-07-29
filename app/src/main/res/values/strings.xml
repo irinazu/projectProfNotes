@@ -3,4 +3,27 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_login">Login</string>
+
+    <string name="title_settings">Settings</string>
+
+    <!-- LoginPage -->
+    <string name="txtLogin">Вход</string>
+    <string name="plsEnterLogin">Пожалуйста, войдите для продолжения</string>
+    <string name="hintEnterLoginOrPhone">Номер телефона или логин</string>
+    <string name="hintEnterPassword">Пароль</string>
+    <string name="loginWithoutAccount">Или войдите без аккаунта, если не хотите пользоваться всеми возможностями</string>
+    <string name="forgotPassword">Не помните свой пароль? Восстановите пароль</string>
+    <string name="buttonLogin">Войти</string>
+
+    <!--MainPage-->
+    <string name="greetings">Доброе утро,</string>
+    <string name="today">Сегодня</string>
+    <string name="news">Новости</string>
+    <string name="hintSearch">Поиск по заметкам</string>
+    <string name="labelNewNotes">Новые заметки %1$s</string>
+    <string name="labelNewTasks">Мои задачи %2$s</string>
+    <string name="allTasks"><u>Все задачи</u></string>
+
+
 </resources>
